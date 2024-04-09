@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <form action="" method="post">
+      <fieldset>
+        <legend><h1>Registration</h1></legend>
+        <div class="content">
+          <div class="input-box">
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Enter Full Name" name="name" required>
+          </div>
+          <div class="input-box">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter a valid email address" name="email" required>
+          </div>
+          <div class="input-box">
+            <label for="phonenumber">Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number" name="phonenumber" required>
+          </div>
+          <div class="input-box">
+            <label for="birth">Date of Birth</label>
+            <input type="date" placeholder="Enter Birthdate" name="birth" required>
+          </div>
+          
+          <div class="input-box">
+            <label for="education">Educational Attainment</label>
+            <select name="education" id="education" required>
+              <option value="">Select Educational Attainment</option>
+              <option value="elementary">Elementary School</option>
+              <option value="highschool">High School</option>
+              <option value="college">College</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter new password" name="password" required>
+          </div>
+          <div class="input-box">
+            <label for="cpass">Confirm Password</label>
+            <input type="password" placeholder="Confirm password" name="cpass" required>
+          </div>
+          
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+          
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+          
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="alert">
+          <p>By clicking sign up, you agree to our terms, Privacy Policy and Cookies Policy. You may receive SMS notification from us and can opt out anytime.</p>
+        </div>
+        <div class="button-container">
+          <button type="submit">Register</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
